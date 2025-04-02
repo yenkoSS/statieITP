@@ -92,3 +92,23 @@ document.querySelectorAll(".nav-header-link-sm").forEach((el) => {
     document.querySelector(".nav-header-list-sm").style.display = "none";
   });
 });
+
+const xOffsets = document.querySelectorAll(".offsetX");
+const yOffsets = document.querySelectorAll(".offsetY");
+
+const offsetXObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("offset-x0", entry.isIntersecting);
+    if (entry.isIntersecting) offsetXObserver.unobserve(entry.target);
+  });
+});
+
+const offsetYObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("offset-y0", entry.isIntersecting);
+    if (entry.isIntersecting) offsetYObserver.unobserve(entry.target);
+  });
+});
+
+xOffsets.forEach((xOffset) => offsetXObserver.observe(xOffset));
+yOffsets.forEach((yOffset) => offsetYObserver.observe(yOffset));
