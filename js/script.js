@@ -73,3 +73,22 @@ document.querySelectorAll(".nav-footer-link").forEach((el) => {
     id.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+document.querySelectorAll(".icon-menu").forEach((el) => {
+  el.addEventListener("click", () => {
+    document.querySelector(".nav-header-list-sm").style.display = "flex";
+  });
+});
+
+document.querySelector(".icon-close").addEventListener("click", () => {
+  document.querySelector(".nav-header-list-sm").style.display = "none";
+});
+
+document.querySelectorAll(".nav-header-link-sm").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = el.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".nav-header-list-sm").style.display = "none";
+  });
+});
