@@ -59,3 +59,17 @@ function updateCounterCars() {
 
 let countsExperience = setInterval(updateCounterExperience, 1);
 let countsCars = setInterval(updateCounterCars, 1);
+
+document.querySelector(".icon-logo-footer").addEventListener("click", (e) => {
+  e.preventDefault();
+  const sectionHome = document.querySelector("#home");
+  sectionHome.scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelectorAll(".nav-footer-link").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = document.querySelector(el.getAttribute("href"));
+    id.scrollIntoView({ behavior: "smooth" });
+  });
+});
