@@ -454,7 +454,7 @@ header {
 .text-services-title {
   font-size: 2.7rem;
   font-weight: 600;
-  color: var(--color-dark-grey);
+  color: white;
 }
 
 .text-services-title span {
@@ -499,6 +499,7 @@ header {
 }
 
 .text-quick-schedule span {
+  display: block;
   font-size: 4rem;
   font-weight: 300;
   margin-left: 20px;
@@ -655,7 +656,7 @@ form {
   flex-direction: column;
   padding: 7rem 2rem;
   align-items: center;
-  min-height: 635px;
+  min-height: 660px;
 }
 
 iframe {
@@ -864,6 +865,10 @@ table td {
 
   .icon-menu {
     display: none;
+  }
+
+  .text-quick-schedule span {
+    display: inline;
   }
 }
 
