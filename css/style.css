@@ -2,7 +2,7 @@
 
 :root {
   --color-dark-grey: #333333;
-  --color-red-default: #d84040;
+  --color-red-default: #ff3131;
   --color-red-light: #c43d3d;
   --color-red-ultra-light: #fff2f2;
 }
@@ -21,12 +21,30 @@ html {
   user-select: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button {
   border: none;
   background-color: transparent;
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 600;
+}
+
+.btn-services {
+  background-color: var(--color-red-default);
+  color: white;
+  padding: 1.3rem 2.6rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.26);
+  transition: 200ms;
+}
+
+.btn-services:hover {
+  transform: translateY(-2px);
+  transition: 200ms;
 }
 
 .img-fluid {
@@ -69,7 +87,7 @@ h3 {
 
 h3 span {
   display: block;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   color: var(--color-red-default);
   width: fit-content;
@@ -154,11 +172,31 @@ header {
 }
 
 .quick-contact {
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   background-color: var(--color-red-default);
-  display: none;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quick-contact-social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.quick-contact-details {
+  display: flex;
+  flex-direction: column;
   justify-content: end;
-  gap: 4rem;
+  gap: 0.5rem;
+}
+
+.icon-quick-contact {
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .text-quick-contact-title {
@@ -169,8 +207,13 @@ header {
 
 .text-quick-contact {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
+}
+
+.icon-quick-social {
+  width: 20px;
+  height: auto;
 }
 
 .nav-header {
@@ -236,7 +279,7 @@ header {
 }
 
 .icon-header {
-  width: 10rem;
+  width: 25rem;
 }
 
 .nav-header-list-lg {
@@ -434,6 +477,7 @@ header {
   background-color: var(--color-red-ultra-light);
 }
 
+/*
 .card-services {
   background-color: var(--color-dark-grey);
   padding: 2rem;
@@ -442,9 +486,27 @@ header {
   align-items: center;
   width: 95%;
   height: 100%;
-  box-shadow: rgb(100 100 111 / 58%) 0px 7px 21px 0px;
-  border: 3px solid white;
-  border-radius: 15px;
+  transition: all 10s;
+}
+
+*/
+
+.card-services {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 10s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card-services:hover {
+  box-shadow: rgba(100, 100, 111, 0.527) 0px 7px 21px 0px;
+  transition: 100ms ease-in;
 }
 
 .card-services-green {
@@ -452,16 +514,23 @@ header {
 }
 
 .text-services-title {
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   font-weight: 600;
-  color: white;
+  color: var(--color-dark-grey);
 }
 
 .text-services-title span {
   font-size: 3.4rem;
   font-weight: 700;
-  color: white;
+  color: var(--color-dark-grey);
   text-transform: uppercase;
+}
+
+.text-services-title .span-h2-2 {
+  background-color: var(--color-red-default);
+  font-size: 2rem;
+  color: white;
+  padding: 2px 5px;
 }
 
 .text-white {
@@ -471,23 +540,46 @@ header {
 .icon-card-services {
   width: 80px;
   height: auto;
-  background-color: white;
   padding: 10px;
-
-  border-radius: 6px;
+  border-radius: 5px;
+  background-color: var(--color-red-default);
+  position: relative;
+  transition: 200ms ease-in;
 }
 
+.box-icon-card-services {
+  position: relative;
+}
+
+.box-icon-card-services::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 8px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #33333352;
+  border-radius: 5px;
+  transition: 200ms;
+}
+
+.card-services:hover .box-icon-card-services::before {
+  left: -15px;
+  transition: 200ms;
+}
+
+.card-services:hover .icon-card-services {
+  padding: 5px;
+  transition: 200ms ease-in;
+}
 /*----- SECTION SERVICES END ----- */
 
 /* ----- SECTION QUICK SCHEDULE START ----- */
 
 .section-quick-schedule {
-  padding: 7rem 0;
+  padding: 5rem 0;
   background: linear-gradient(to left, var(--color-red-default), var(--color-red-light));
-  width: 95%;
-  /*transform: rotate(-2deg);*/
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 2px 2px 20px #00000082;
 }
 
@@ -522,32 +614,30 @@ header {
   position: relative;
   width: 100%;
   box-shadow: rgb(100 100 111 / 58%) 0px 7px 21px 0px;
-  border-radius: 15px;
-  border: 5px solid white;
 }
 
 .icon-prices {
-  padding: 10px;
+  padding: 15px;
   width: 80px;
   height: auto;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 2px;
   position: absolute;
   top: -35px;
   left: 50%;
   transform: translateX(-50%);
-  border: 3px solid var(--color-dark-grey);
 }
 
 .text-prices-price {
-  font-size: 4rem;
-  color: white;
-  font-weight: 500;
+  font-size: 5rem;
+  color: var(--color-dark-grey);
+  font-weight: 400;
 }
 
 .text-prices-price span {
   font-size: 2rem;
   font-weight: 600;
+  color: var(--color-red-default);
 }
 
 .text-prices-title {
@@ -587,7 +677,6 @@ header {
 .card-contact {
   box-shadow: rgb(100 100 111 / 19%) 0px 7px 21px 0px;
   background-color: white;
-  border-radius: 0.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -647,22 +736,20 @@ form {
 }
 
 .box-contact-details {
-  background: linear-gradient(to left, var(--color-red-default), var(--color-red-light));
   width: 100%;
-  height: auto;
+  height: 800px;
   border-radius: 0 0.6rem 0.6rem 0;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 7rem 2rem;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 660px;
 }
 
 iframe {
   width: 100%;
-  min-height: 300px;
-  border-radius: 5px;
+  min-height: 350px;
+  height: 100%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.301);
 }
 
@@ -709,14 +796,42 @@ iframe {
 .text-feature-title {
   font-size: 2.2rem;
   font-weight: 700;
-  color: white;
+  color: var(--color-dark-grey);
 }
 
 .text-feature-detail {
   font-size: 18px;
   font-weight: 500;
-  color: white;
+  color: var(--color-dark-grey);
 }
+
+.icon-card-contact {
+  width: 50px;
+  height: auto;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: var(--color-red-default);
+  position: relative;
+  transition: 200ms ease-in;
+}
+
+.box-icon-card-contact {
+  position: relative;
+}
+
+.box-icon-card-contact::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 5px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  background-color: #ff00001f;
+  border-radius: 3px;
+  transition: 200ms;
+}
+
 /*----- SECTION CONTACT END ----- */
 
 /* ----- FOOTER START ----- */
@@ -730,7 +845,7 @@ footer {
 }
 
 .icon-logo-footer {
-  width: 150px;
+  width: 350px;
   height: auto;
 }
 
@@ -821,6 +936,12 @@ table td {
 
 /* ----- START ----- */
 
+@media screen and (min-width: 576px) {
+  .quick-contact {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 58%;
@@ -869,6 +990,13 @@ table td {
 
   .text-quick-schedule span {
     display: inline;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .quick-contact-details {
+    flex-direction: row;
+    gap: 4rem;
   }
 }
 

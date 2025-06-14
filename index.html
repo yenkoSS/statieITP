@@ -41,9 +41,57 @@
   <body>
     <header id="home">
       <div class="quick-contact">
-        <p class="text-quick-contact-title">Programare rapidă</p>
-        <p class="text-quick-contact">0749406638</p>
-        <p class="text-quick-contact">office@websiteshop.ro</p>
+        <div class="quick-contact-social">
+          <img
+            src="icons/facebook statie itp.svg"
+            alt="facebook statie itp"
+            class="icon-quick-social"
+          />
+          <img
+            src="icons/instagram statie itp.svg"
+            alt="instagram statie itp"
+            class="icon-quick-social"
+          />
+          <img
+            src="icons/tiktok statie itp.svg"
+            alt="tiktok statie itp"
+            class="icon-quick-social"
+          />
+        </div>
+        <div class="quick-contact-details">
+          <div class="d-flex">
+            <img
+              src="icons/program statie itp top.svg"
+              alt="program statie itp top"
+              class="icon-quick-contact"
+            />
+            <p class="text-quick-contact">Luni - Vineri: 08:00 - 17:00</p>
+          </div>
+          <div class="d-flex">
+            <img
+              src="icons/adresa statie itp top.svg"
+              alt="adresa statie itp top"
+              class="icon-quick-contact"
+            />
+            <p class="text-quick-contact">Piața Libertății nr. 9, Miercurea Ciuc</p>
+          </div>
+          <div class="d-flex">
+            <img
+              src="icons/telefon statie itp top.svg"
+              alt="telefon statie itp top"
+              class="icon-quick-contact"
+            />
+            <p class="text-quick-contact">0749 406 638</p>
+          </div>
+          <div class="d-flex">
+            <img
+              src="icons/email statie itp top.svg"
+              alt="email statie itp top"
+              class="icon-quick-contact"
+            />
+            <p class="text-quick-contact">office@websiteshop.ro</p>
+          </div>
+        </div>
       </div>
       <nav class="nav-header">
         <div class="container d-flex justify-content-between align-items-center">
@@ -58,6 +106,7 @@
             <li><a href="#section-about" class="nav-header-link-lg">Despre</a></li>
             <li><a href="#section-services" class="nav-header-link-lg">Servicii</a></li>
             <li><a href="#section-prices" class="nav-header-link-lg">Tarife</a></li>
+            <li><a href="#faq" class="nav-header-link-lg">Întrebări</a></li>
           </ul>
           <button class="btn-nav">Contact</button>
           <img src="icons/menu statie itp.svg" alt="meniu statie itp" class="icon-menu" />
@@ -76,6 +125,7 @@
             <li><a href="#section-about" class="nav-header-link-lg">Despre</a></li>
             <li><a href="#section-services" class="nav-header-link-lg">Servicii</a></li>
             <li><a href="#section-prices" class="nav-header-link-lg">Tarife</a></li>
+            <li><a href="#faq" class="nav-header-link-lg">Întrebări</a></li>
           </ul>
           <button class="btn-nav">Contact</button>
           <img src="icons/menu statie itp.svg" alt="meniu statie itp" class="icon-menu" />
@@ -183,83 +233,109 @@
         </p>
         <div class="row mbot-20 g-5">
           <div class="col-lg-6 d-flex justify-content-center">
-            <div class="card-services card-services-green offset-x1neg offsetX">
-              <img
-                src="icons/itp autoturism.svg"
-                alt="itp autoturisme"
-                class="icon-card-services mbot-30"
-              />
+            <div class="card-services offset-x1neg offsetX">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/itp autoturisme.svg"
+                  alt="itp autoturisme"
+                  class="icon-card-services"
+                />
+              </div>
               <h2 class="text-services-title mbot-20"><span>ITP</span> autoturisme</h2>
+              <p class="mbot-40">
+                La ITP pentru autoturisme, se verifică starea generală a vehiculului
+                pentru a asigura siguranța și conformitatea cu normele legale. Sunt
+                controlate elemente precum sistemul de frânare, direcția, luminile,
+                emisiile poluante, suspensiile și starea caroseriei. ITP-ul este
+                obligatoriu și trebuie efectuat periodic, în funcție de vechimea și tipul
+                vehiculului.
+              </p>
+              <button class="btn-services">Contact</button>
             </div>
           </div>
           <div class="col-lg-6 d-flex justify-content-center">
-            <div class="card-services card-services-green offset-x1pos offsetX">
-              <img
-                src="icons/itp autoutilitare.svg"
-                alt="itp autoutilitare"
-                class="icon-card-services mbot-30"
-              />
+            <div class="card-services offset-x1pos offsetX">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/itp autoutilitare.svg"
+                  alt="itp autoutilitare"
+                  class="icon-card-services"
+                />
+              </div>
+
               <h2 class="text-services-title"><span>ITP</span> autoutilitare</h2>
+              <p class="mbot-30">
+                La ITP pentru autoutilitare, inspecția este mai strictă comparativ cu
+                autoturismele, deoarece aceste vehicule sunt folosite frecvent pentru
+                transport de marfă și pot prezenta un grad mai mare de uzură. ITP-ul
+                pentru autoutilitare se efectuează la fiecare 6 luni sau 1 an, în funcție
+                de categoria vehiculului și destinația acestuia (transport marfă, regim
+                mixt etc.). Lipsa unui ITP valabil atrage sancțiuni și interzicerea
+                circulației.
+              </p>
+              <button class="btn-services">Contact</button>
             </div>
           </div>
         </div>
         <div class="row g-5">
           <div class="col-lg-4 d-flex justify-content-center">
-            <div class="card-services offset-y1pos offsetY">
-              <img
-                src="icons/test sistem de franare.svg"
-                alt="itp autoturisme"
-                class="icon-card-services icon-card-services-green mbot-20"
-              />
-              <h2 class="text-services-title text-white mbot-20">
-                Test sistem de frânare
+            <div class="card-services card-services-hover-top offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/verificare sistem de franare.svg"
+                  alt="verificare sistem de franare"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-20">
+                <span class="span-h2-2">Verificare</span> sistem de frânare
               </h2>
-              <p class="text-white">
-                Testul sistemului de frânare într-o stație ITP (Inspecția Tehnică
-                Periodică) este o verificare esențială pentru siguranța rutieră, având
-                rolul de a evalua eficiența și funcționarea corectă a frânelor unui
-                vehicul.
+              <p class="mbot-30">
+                În cadrul acestei verificări, se controlează eficiența sistemului de
+                frânare, funcționarea frânei de serviciu și a celei de staționare, precum
+                și eventualele pierderi de lichid sau componente uzate.
               </p>
-              <p class="text-white">
-                Vehiculul este plasat pe un stand special cu role, care măsoară forța de
-                frânare exercitată pe fiecare roată. Se analizează frânele de serviciu
-                (pedală) și frâna de mână (frână de parcare).
-              </p>
+              <button class="btn-services">Contact</button>
             </div>
           </div>
           <div class="col-lg-4 d-flex justify-content-center">
-            <div class="card-services offset-y2pos offsetY">
-              <img
-                src="icons/test emisii noxe.svg"
-                alt="itp autoutilitare"
-                class="icon-card-services icon-card-services-green mbot-20"
-              />
-              <h2 class="text-services-title text-white mbot-20">Test emisii de noxe</h2>
-              <p class="text-white">
-                Testul de emisii noxe este o verificare tehnică efectuată asupra unui
-                vehicul pentru a măsura nivelul de poluanți eliberați în atmosferă, cum ar
-                fi dioxidul de carbon (CO₂), oxizii de azot (NOx) și particulele în
-                suspensie. Acest test este necesar pentru a asigura conformitatea
-                autovehiculului cu normele de mediu și pentru a preveni poluarea excesivă.
+            <div class="card-services card-services-hover-top offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/verificare emisii de noxe.svg"
+                  alt="verificare emisii de noxe"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-20">
+                <span class="span-h2-2">Verificare</span> emisii de noxe
+              </h2>
+              <p class="mbot-30">
+                La verificarea emisiilor de noxe în cadrul ITP, se măsoară nivelul gazelor
+                de eșapament pentru a se asigura că vehiculul respectă normele de poluare
+                în vigoare.
               </p>
+              <button class="btn-services">Contact</button>
             </div>
           </div>
           <div class="col-lg-4 d-flex justify-content-center">
-            <div class="card-services offset-y3pos offsetY">
-              <img
-                src="icons/reglaj lumini statie itp.svg"
-                alt="itp autoutilitare"
-                class="icon-card-services icon-card-services-green mbot-20"
-              />
-              <h2 class="text-services-title text-white mbot-20">Reglaj lumini</h2>
-              <p class="text-white">
-                Reglajul luminilor într-o stație ITP (Inspecția Tehnică Periodică) este un
-                proces prin care farurile unui vehicul sunt ajustate pentru a asigura o
-                iluminare corectă și conformă cu normele de siguranță rutieră. Acest
-                reglaj este necesar pentru prevenirea oribirii șoferilor care vin din sens
-                opus, asigurarea unei vizibilități optime pe timp de noapte și respectarea
-                reglementărilor tehnice.
+            <div class="card-services card-services-hover-top offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/verificare si reglaj lumini.svg"
+                  alt="verificare si reglaj lumini"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-20">
+                <span class="span-h2-2">Verificare</span> lumini
+              </h2>
+              <p class="mbot-30">
+                La verificarea și reglajul luminilor în cadrul ITP, se controlează
+                funcționarea corectă a sistemului de iluminare și poziția fasciculului
+                luminos, în special la farurile de drum și întâlnire.
               </p>
+              <button class="btn-services">Contact</button>
             </div>
           </div>
         </div>
@@ -280,82 +356,111 @@
         <p class="mbot-90 d-flex flex-column align-items-center justify-content-center">
           Mai jos găsești tarifele aplicate în stația noastra ITP.
         </p>
-        <div class="row" style="row-gap: 6rem">
-          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card-prices offset-y3pos offsetY">
-              <img
-                src="icons/tarife itp autoturisme.svg"
-                alt="tarife statie itp"
-                class="icon-prices mbot-20"
-              />
-              <h2 class="text-prices-title mbot-20"><span>ITP</span> autoturisme</h2>
-              <p class="text-prices-price">250 / <span>LEI</span></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card-prices offset-y2pos offsetY">
-              <img
-                src="icons/tarife itp autoutilitare.svg"
-                alt="tarife statie itp"
-                class="icon-prices mbot-20"
-              />
-              <h2 class="text-prices-title mbot-20"><span>ITP</span> autoutilitare</h2>
-              <p class="text-prices-price">300 / <span>LEI</span></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card-prices offset-y1pos offsetY">
-              <img
-                src="icons/test sistem de franare.svg"
-                alt="tarife statie itp"
-                class="icon-prices mbot-20"
-              />
-              <h2 class="text-prices-title mbot-20">
-                <span>Test </span>sistem de frânare
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card-services offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/pret servicii.svg"
+                  alt="pret itp autoturism"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-30">
+                <span class="span-h2-2">ITP</span> autoturisme
               </h2>
-              <p class="text-prices-price">150 / <span>LEI</span></p>
+              <p class="text-prices-price mbot-30">250 / <span>LEI</span></p>
+              <button class="btn-services">Contact</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card-services offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/pret servicii.svg"
+                  alt="pret itp autoutilitara"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-30">
+                <span class="span-h2-2">ITP</span> autoutilitare
+              </h2>
+              <p class="text-prices-price mbot-30">300 / <span>LEI</span></p>
+              <button class="btn-services">Contact</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card-services offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/pret servicii.svg"
+                  alt="pret verificare sistem de franare"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-30">
+                <span class="span-h2-2">Verificare</span> sistem de frânare
+              </h2>
+              <p class="text-prices-price mbot-30">100 / <span>LEI</span></p>
+              <button class="btn-services">Contact</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card-services offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/pret servicii.svg"
+                  alt="pret verificare emisii de noxe"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-30">
+                <span class="span-h2-2">Verificare</span> emisii de noxe
+              </h2>
+              <p class="text-prices-price mbot-30">100 / <span>LEI</span></p>
+              <button class="btn-services">Contact</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card-services offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/pret servicii.svg"
+                  alt="pret verificare si reglaj lumini"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-30">
+                <span class="span-h2-2">Verificare</span> lumini
+              </h2>
+              <p class="text-prices-price mbot-30">100 / <span>LEI</span></p>
+              <button class="btn-services">Contact</button>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card-prices offset-y1pos offsetY">
-              <img
-                src="icons/test emisii noxe.svg"
-                alt="tarife statie itp"
-                class="icon-prices mbot-20"
-              />
-              <h2 class="text-prices-title mbot-20"><span>Test </span>emisii noxe</h2>
-              <p class="text-prices-price">150 / <span>LEI</span></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card-prices offset-y2pos offsetY">
-              <img
-                src="icons/reglaj lumini statie itp.svg"
-                alt="tarife statie itp"
-                class="icon-prices mbot-20"
-              />
-              <h2 class="text-prices-title mbot-20"><span>Reglaj </span>lumini</h2>
-              <p class="text-prices-price">100 / <span>LEI</span></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card-prices offset-y3pos offsetY">
-              <img
-                src="icons/spalare statie itp.svg"
-                alt="tarife statie itp"
-                class="icon-prices mbot-20"
-              />
-              <h2 class="text-prices-title mbot-20"><span>Spălare </span>autovehicul</h2>
-              <p class="text-prices-price">30 / <span>LEI</span></p>
+            <div class="card-services card-services-hover-top offset-y1pos offsetY">
+              <div class="box-icon-card-services mbot-30">
+                <img
+                  src="icons/pret servicii.svg"
+                  alt="pret spalare autovehicul"
+                  class="icon-card-services icon-card-services-green"
+                />
+              </div>
+              <h2 class="text-services-title mbot-20">
+                <span class="span-h2-2">Spălare</span> autovehicul
+              </h2>
+              <p class="text-prices-price mbot-30">100 / <span>LEI</span></p>
+              <button class="btn-services">Contact</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-faq">
+    <section id="faq" class="section-faq">
       <div class="container">
         <h3 class="mbot-60 offset-x1neg offsetX">
-          Cel mai des întâlnite curiozități ale clienților<span class="text-white mbot-60"
+          Întrebările cel mai frecvent întâlnite ale clienților<span
+            class="text-white mbot-60"
             >Întrebări frecvente</span
           >
         </h3>
@@ -414,42 +519,66 @@
                 <button class="btn-form">Trimite</button>
               </form>
               <div class="box-contact-details">
-                <div class="box">
-                  <div class="contact-feature-box mbot-20">
-                    <img
-                      src="icons/telefon statie itp.svg"
-                      alt="telefon statie ITP"
-                      class="icon-contact"
-                    />
-                    <div class="d-flex flex-column">
-                      <p class="text-feature-title">Telefon</p>
-                      <p class="text-feature-detail">0749406638</p>
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                  style="height: 100%; width: 100%"
+                >
+                  <div>
+                    <div class="contact-feature-box mbot-20">
+                      <div class="box-icon-card-contact">
+                        <img
+                          src="icons/telefon statie itp.svg"
+                          alt="telefon statie itp"
+                          class="icon-card-contact"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p class="text-feature-title">Telefon</p>
+                        <p class="text-feature-detail">0749406638</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="contact-feature-box mbot-20">
-                    <img
-                      src="icons/email statie itp.svg"
-                      alt="e-mail ITP"
-                      class="icon-contact"
-                    />
-                    <div class="d-flex flex-column">
-                      <p class="text-feature-title">Email</p>
-                      <p class="text-feature-detail">office@websiteshop.ro</p>
+                    <div class="contact-feature-box mbot-20">
+                      <div class="box-icon-card-contact">
+                        <img
+                          src="icons/email statie itp contact.svg"
+                          alt="email statie itp"
+                          class="icon-card-contact"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p class="text-feature-title">Email</p>
+                        <p class="text-feature-detail">office@websiteshop.ro</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="contact-feature-box">
-                    <img
-                      src="icons/locatie statie itp.svg"
-                      alt="adresa statie ITP"
-                      class="icon-contact"
-                    />
-                    <div class="d-flex flex-column">
-                      <p class="text-feature-title">Adresă</p>
-                      <p class="text-feature-detail">Strada Panselelor nr. 9</p>
+                    <div class="contact-feature-box mbot-20">
+                      <div class="box-icon-card-contact">
+                        <img
+                          src="icons/locatie statie itp contact.svg"
+                          alt="adresa statie itp"
+                          class="icon-card-contact"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p class="text-feature-title">Adresă</p>
+                        <p class="text-feature-detail">Strada Panselelor nr. 9</p>
+                      </div>
+                    </div>
+                    <div class="contact-feature-box">
+                      <div class="box-icon-card-contact">
+                        <img
+                          src="icons/program de lucru statie itp.svg"
+                          alt="program de lucru statie itp"
+                          class="icon-card-contact"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p class="text-feature-title">Program de lucru</p>
+                        <p class="text-feature-detail">Luni - Vineri: 08:00 - 17:00</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div style="width: 95%">
+                <div style="width: 100%; height: 100%">
                   <iframe
                     frameborder="0"
                     scrolling="no"
@@ -511,6 +640,7 @@
                 <li><a href="#section-about" class="nav-footer-link">Despre noi</a></li>
                 <li><a href="#section-services" class="nav-footer-link">Servicii</a></li>
                 <li><a href="#section-prices" class="nav-footer-link">Tarife</a></li>
+                <li><a href="#faq" class="nav-footer-link">Întrebări</a></li>
               </ul>
             </div>
           </div>
