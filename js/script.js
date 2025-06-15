@@ -23,11 +23,25 @@ document.querySelectorAll(".nav-header-link-lg").forEach((el) => {
   });
 });
 
+document.querySelectorAll(".btn-services").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const sectionContact = document.querySelector(".section-contact");
+    sectionContact.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 document.querySelector(".btn-hero-services").addEventListener("click", (e) => {
   e.preventDefault();
   const sectionServices = document.querySelector(".section-services");
   sectionServices.scrollIntoView({ behavior: "smooth" });
 });
+
+document.querySelector(".btn-event-contact").addEventListener("click", (e) => {
+  e.preventDefault();
+  const sectionContact = document.querySelector(".section-contact");
+  sectionContact.scrollIntoView({ behavior: "smooth" });
+});
+
 document.querySelectorAll(".btn-nav").forEach((el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
