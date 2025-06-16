@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --color-dark-grey: #333333;
@@ -19,6 +19,7 @@ html {
   font-size: 45%;
   font-family: "Open Sans", sans-serif;
   user-select: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -34,8 +35,6 @@ button {
 }
 
 .btn-services {
-  position: absolute;
-  bottom: -10rem;
   background-color: #3d3d3d;
   color: white;
   padding: 1.3rem 2.6rem;
@@ -71,7 +70,7 @@ h1 {
   font-size: 4rem;
   font-weight: 600;
   color: var(--color-red-default);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 h1 span {
@@ -81,27 +80,27 @@ h1 span {
 }
 
 h3 {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
   color: var(--color-dark-grey);
   display: inline;
 }
 
 h3 span {
   display: block;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
   color: var(--color-red-default);
   width: fit-content;
   margin-top: 5px;
-  text-transform: uppercase;
 }
 
 P {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--color-dark-grey);
   line-height: 30px;
+  font-weight: 400;
 }
 
 .text-hero {
@@ -126,6 +125,7 @@ P {
 
 .text-hero-counter {
   font-size: 6rem;
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
   color: white;
 }
@@ -172,6 +172,18 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+.icon-quick-contact-whatsapp {
+  position: fixed;
+  height: auto;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.171));
+  z-index: 5;
+  bottom: 6rem;
+  right: 3rem;
+  width: 6rem;
+  height: auto;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.171));
 }
 
 .quick-contact {
@@ -495,7 +507,7 @@ header {
 */
 
 .card-services {
-  padding: 3rem 3rem 8rem 3rem;
+  padding: 3rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -513,10 +525,6 @@ header {
   transition: 100ms ease-in;
 }
 
-.card-services:hover .btn-services {
-  bottom: 5rem;
-}
-
 .card-services-green {
   background-color: var(--color-red-default);
 }
@@ -525,7 +533,7 @@ header {
   font-size: 2.3rem;
   font-weight: 600;
   color: var(--color-dark-grey);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .text-services-title span {
@@ -537,9 +545,9 @@ header {
 
 .text-services-title .span-h2-2 {
   background-color: var(--color-red-default);
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
-  padding: 2px 5px;
+  padding: 1px 10px;
 }
 
 .text-white {
@@ -596,7 +604,7 @@ header {
   font-size: 3rem;
   font-weight: 600;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .text-quick-schedule span {
@@ -704,7 +712,7 @@ form {
   font-size: 2.3rem;
   font-weight: 700;
   color: var(--color-red-default);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .input-box {
@@ -806,7 +814,7 @@ iframe {
   font-size: 2.2rem;
   font-weight: 600;
   color: var(--color-dark-grey);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .text-feature-detail {
@@ -860,11 +868,12 @@ footer {
 }
 
 .text-footer-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   color: white;
   border-bottom: 1px solid white;
   width: fit-content;
+  font-family: "Dosis", sans-serif;
 }
 
 .nav-footer-list {
